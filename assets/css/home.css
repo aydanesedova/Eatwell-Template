@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  min-height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  position: fixed !important;
+}
+nav .eatwell {
+  width: 85%;
+}
+nav .eatwell .eatwellLogo {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+nav .eatwell .eatwellList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+}
+nav .eatwell .eatwellList li a {
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75) !important;
+  transition: 0.5s ease;
+}
+nav .eatwell .eatwellList li a:hover {
+  color: #fff !important;
+}
+nav .eatwell .eatwellList li .home {
+  color: #fff !important;
+}
+nav .eatwell .eatwellList li i {
+  font-size: 20px;
+}
+nav .eatwell .eatwellList .search {
+  width: 22%;
+  border: 1px solid rgba(255, 255, 255, 0.522);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+nav .eatwell .eatwellList .search #inp {
+  width: 80%;
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+nav .eatwell .eatwellList .search #inp::placeholder {
+  color: rgba(255, 255, 255, 0.522);
+}
+nav .eatwell .eatwellList .search #btn {
+  background-color: transparent;
+  border-radius: 15px;
+  border: none;
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.522);
+  transition: 0.4s ease;
+}
+nav .eatwell .eatwellList .search #btn:hover {
+  color: #fff;
+}
+
+#welcome {
+  min-height: 700px;
+  width: 100%;
+  background-image: url(/assets/images/bg_3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#welcome .welcomeTxt {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#welcome .welcomeTxt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 75px;
+  line-height: 101px;
+  font-weight: 700;
+  color: #fff;
+}
+#welcome .welcomeTxt p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 300;
+}
+#welcome .welcomeTxt button {
+  min-width: 15%;
+  min-height: 54px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.4s ease;
+}
+#welcome .welcomeTxt button:hover {
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome .welcomeTxt h2 {
+    font-size: 30px;
+  }
+  #welcome .welcomeTxt p {
+    font-size: 11px;
+  }
+  #welcome .welcomeTxt button {
+    font-size: 12px;
+  }
+}
+#ourStory {
+  min-height: 664px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourStory .ourStoryTxt span {
+  color: #d4d4d4;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#ourStory .ourStoryTxt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 100px;
+  font-weight: 300;
+  color: #000;
+}
+#ourStory .ourStoryTxt p {
+  color: #b8b8b8;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  width: 80%;
+  font-weight: 600;
+}
+#ourStory .ourStoryTxt button {
+  width: 39%;
+  min-height: 54px;
+  border: 2px solid #999;
+  color: #999;
+  transition: 0.4s ease;
+  background-color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+#ourStory .ourStoryTxt button:hover {
+  color: #fff;
+  background-color: #FDA403;
+  border: none;
+}
+#ourStory .about img {
+  width: 95%;
+  max-height: 360.72px;
+}
+
+@media screen and (max-width: 575px) {
+  #ourStory .ourStoryTxt span {
+    font-size: 10px;
+  }
+  #ourStory .ourStoryTxt h2 {
+    font-size: 20px;
+  }
+  #ourStory .ourStoryTxt p {
+    font-size: 12px;
+  }
+  #ourStory .ourStoryTxt button {
+    font-size: 10px;
+  }
+}
+#ourOffers {
+  min-height: 1000px;
+  width: 100%;
+  background-color: #F8F9FA;
+  display: flex;
+  justify-content: center;
+}
+#ourOffers .ourOffersTxt {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ourOffers .ourOffersTxt span {
+  color: #d4d4d4;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#ourOffers .ourOffersTxt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: #000;
+}
+#ourOffers .ourOffersTxt p {
+  color: #b8b8b8;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  width: 80%;
+  font-weight: 600;
+  width: 55%;
+  text-align: center;
+}
+#ourOffers #productsAll {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#ourOffers #productsAll .miniDiv {
+  width: 33%;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#ourOffers #productsAll .miniDiv img {
+  width: 95%;
+}
+#ourOffers #productsAll .miniDiv h2 {
+  color: #141517;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: poppins;
+}
+#ourOffers #productsAll .miniDiv button {
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 57px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  transition: 0.5s ease;
+  width: 50%;
+  height: 45px;
+  display: flex;
+  color: #fda403;
+  align-items: center;
+  transition: 0.4s ease;
+}
+#ourOffers #productsAll .miniDiv button:hover {
+  color: #000;
+}
+#ourOffers .loadMore {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourOffers .loadMore #loadMore {
+  min-width: 202px;
+  min-height: 63px;
+  background-color: transparent;
+  border: 3px solid #141517;
+  font-size: 16px;
+  line-height: 57px;
+  color: #141517;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+#ourOffers .loadMore #loadMore:hover {
+  background-color: #141517;
+  color: #fff;
+}
+
+@media screen and (max-width: 358px) {
+  #ourOffers .ourOffersTxt span {
+    font-size: 12px;
+  }
+  #ourOffers .ourOffersTxt h2 {
+    font-size: 20px;
+  }
+  #ourOffers .ourOffersTxt p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 820px) {
+  #ourOffers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #ourOffers #productsAll {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 40px;
+  }
+  #ourOffers #productsAll .miniDiv {
+    width: 100%;
+  }
+  #ourOffers #productsAll .miniDiv img {
+    width: 60%;
+  }
+  #ourOffers #productsAll .miniDiv button {
+    font-size: 8px;
+  }
+}
+#news {
+  min-height: 1118px;
+  width: 100%;
+  background-color: #F8F9FA;
+  display: flex;
+  justify-content: center;
+}
+#news .newsTxt {
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#news .newsTxt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 100px;
+  font-weight: 300;
+  color: #000;
+}
+#news .newsTxt p {
+  color: #b8b8b8;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  width: 55%;
+  font-weight: 600;
+  text-align: center;
+}
+#news .deliciousFood {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 500px;
+}
+#news .deliciousFood img {
+  width: 100%;
+}
+#news .deliciousFood h2 {
+  width: 60%;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #000;
+}
+#news .deliciousFood p {
+  font-family: Raleway, sans-serif;
+  color: #b8b8b8;
+  font-weight: 600;
+  width: 75%;
+  text-align: center;
+}
+#news .deliciousFood button {
+  width: 30%;
+  border: none;
+  background-color: #FDA403;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Playfair Display", serif;
+  transition: 0.5s ease;
+  min-height: 40px;
+}
+#news .deliciousFood button:hover {
+  background-color: #CB8402;
+}
+
+@media screen and (max-width: 768px) {
+  #news .newsTxt h2 {
+    font-size: 20px;
+  }
+  #news .newsTxt p {
+    font-size: 10px;
+  }
+}
+#getInTouch {
+  min-height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F8F9FA;
+}
+#getInTouch .getInTouchTxt {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#getInTouch .getInTouchTxt h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 62px;
+  font-weight: 300;
+  color: #000;
+}
+#getInTouch .getInTouchTxt p {
+  color: #b8b8b8;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 55%;
+  text-align: center;
+}
+#getInTouch #myForm {
+  min-height: 600px;
+  width: 100%;
+}
+#getInTouch #myForm input {
+  border-radius: 0px;
+  background-color: #E6E6E6;
+  min-height: 55px;
+}
+#getInTouch #myForm input::placeholder {
+  color: #7b7979;
+}
+#getInTouch #myForm #exampleFormControlTextarea1 {
+  min-height: 300px;
+  border-radius: 0px;
+  background-color: #E6E6E6;
+}
+#getInTouch #myForm #exampleFormControlTextarea1::placeholder {
+  color: #7b7979;
+}
+#getInTouch #myForm button {
+  width: 30%;
+  border: none;
+  min-height: 52px;
+  background-color: #FDA403;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  transition: 0.4s ease;
+  font-size: 16px;
+}
+#getInTouch #myForm button:hover {
+  background-color: #CB8402;
+}
+#getInTouch .inpImg {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  flex-direction: column;
+}
+#getInTouch .inpImg img {
+  width: 65%;
+  max-height: 233px;
+}
+#getInTouch .inpImg .Address {
+  width: 65%;
+}
+#getInTouch .inpImg .Address p {
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+#getInTouch .inpImg .Address .phone {
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+}
+#getInTouch .inpImg .Address .emailTxt {
+  min-height: 40px;
+  display: flex;
+  align-items: end;
+}
+#getInTouch .inpImg .Address .email {
+  color: #FDA403;
+}
+
+@media screen and (max-width: 670px) {
+  #getInTouch .getInTouchTxt h2 {
+    font-size: 20px;
+  }
+  #getInTouch .getInTouchTxt p {
+    font-size: 14px;
+  }
+}
+footer {
+  min-height: 200px;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .copyrigh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7b7979;
+}
+footer .copyrigh p {
+  color: #7b7979;
+}
+footer .copyrigh p span {
+  color: #7b7979;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .copyrigh p span:hover {
+  color: #FDA403;
+}
+
+@media screen and (max-width: 768px) {
+  footer .copyright p {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    min-height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    position: fixed !important;
+
+    .eatwell {
+        width: 85%;
+
+        .eatwellLogo {
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .eatwellList {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 25px;
+
+            li {
+                a {
+                    font-family: Raleway, sans-serif;
+                    font-size: 13px;
+                    line-height: 21px;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, .75) !important;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        color: #fff !important;
+                    }
+                }
+
+                .home {
+                    color: #fff !important;
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            .search {
+                width: 22%;
+                border: 1px solid rgba(255, 255, 255, 0.522);
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 15px;
+
+                #inp {
+                    width: 80%;
+                    border: none;
+                    margin-left: 10px;
+                    background-color: transparent;
+                    color: #fff;
+
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.522);
+                    }
+                }
+
+                #btn {
+                    background-color: transparent;
+                    border-radius: 15px;
+                    border: none;
+                    margin-right: 5px;
+                    color: rgba(255, 255, 255, 0.522);
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#welcome {
+    min-height: 700px;
+    width: 100%;
+    background-image: url(/assets/images/bg_3.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .welcomeTxt {
+        width: 100%;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 75px;
+            line-height: 101px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            line-height: 60px;
+            font-weight: 300;
+        }
+
+        button {
+            min-width: 15%;
+            min-height: 54px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            font-family: "Playfair Display", serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #fff;
+            transition: 0.4s ease;
+
+            &:hover {
+                color: #1a1a1a;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #welcome {
+        .welcomeTxt {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+
+            button {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#ourStory {
+    min-height: 664px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ourStoryTxt {
+        span {
+            color: #d4d4d4;
+            font-family: Raleway, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 56px;
+            line-height: 100px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        p {
+            color: #b8b8b8;
+            font-family: Raleway, sans-serif;
+            font-size: 16px;
+            line-height: 26px;
+            width: 80%;
+            font-weight: 600;
+        }
+
+        button {
+            width: 39%;
+            min-height: 54px;
+            border: 2px solid #999;
+            color: #999;
+            transition: 0.4s ease;
+            background-color: #fff;
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 16px;
+
+            &:hover {
+                color: #fff;
+                background-color: #FDA403;
+                border: none;
+            }
+        }
+    }
+
+    .about {
+        img {
+            width: 95%;
+            max-height: 360.72px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    #ourStory {
+        .ourStoryTxt {
+            span {
+                font-size: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            button {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#ourOffers {
+    min-height: 1000px;
+    width: 100%;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+
+    .ourOffersTxt {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        span {
+            color: #d4d4d4;
+            font-family: Raleway, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 56px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        p {
+            color: #b8b8b8;
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            line-height: 26px;
+            width: 80%;
+            font-weight: 600;
+            width: 55%;
+            text-align: center;
+        }
+    }
+
+    #productsAll {
+        width: 100%;
+        min-height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .miniDiv {
+            width: 33%;
+            min-height: 350px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+                width: 95%;
+
+            }
+
+            h2 {
+                color: #141517;
+                font-size: 22px;
+                font-weight: 700;
+                font-family: poppins;
+            }
+
+            button {
+                background-color: transparent;
+                font-size: 14px;
+                line-height: 57px;
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                transition: 0.5s ease;
+                width: 50%;
+                height: 45px;
+                display: flex;
+                color: #fda403;
+                align-items: center;
+                transition: 0.4s ease;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .loadMore {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #loadMore {
+            min-width: 202px;
+            min-height: 63px;
+            background-color: transparent;
+            border: 3px solid #141517;
+            font-size: 16px;
+            line-height: 57px;
+            color: #141517;
+            font-weight: 700;
+            transition: 0.5s ease;
+
+            &:hover {
+                background-color: #141517;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:358px) {
+    #ourOffers {
+        .ourOffersTxt {
+            span {
+                font-size: 12px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:820px) {
+    #ourOffers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        #productsAll {
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin-left: 40px;
+
+            .miniDiv {
+                width: 100%;
+
+                img {
+                    width: 60%;
+                }
+
+                button {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+#news {
+    min-height: 1118px;
+    width: 100%;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+
+    .newsTxt {
+        min-height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 56px;
+            line-height: 100px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        p {
+            color: #b8b8b8;
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            line-height: 26px;
+            width: 55%;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    .deliciousFood {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        min-height: 500px;
+
+        img {
+            width: 100%;
+        }
+
+        h2 {
+            width: 60%;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #000;
+        }
+
+        p {
+            font-family: Raleway, sans-serif;
+            color: #b8b8b8;
+            font-weight: 600;
+            width: 75%;
+            text-align: center;
+        }
+
+        button {
+            width: 30%;
+            border: none;
+            background-color: #FDA403;
+            color: #fff;
+            font-size: 12px;
+            font-family: "Playfair Display", serif;
+            transition: 0.5s ease;
+            min-height: 40px;
+
+            &:hover {
+                background-color: #CB8402;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #news {
+        .newsTxt {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#getInTouch {
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F9FA;
+
+    .getInTouchTxt {
+        width: 100%;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 56px;
+            line-height: 62px;
+            font-weight: 300;
+            color: #000;
+        }
+
+        p {
+            color: #b8b8b8;
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            width: 55%;
+            text-align: center;
+        }
+    }
+
+    #myForm {
+        min-height: 600px;
+        width: 100%;
+
+        input {
+            border-radius: 0px;
+            background-color: #E6E6E6;
+            min-height: 55px;
+
+            &::placeholder {
+                color: #7b7979;
+            }
+        }
+
+        #exampleFormControlTextarea1 {
+            min-height: 300px;
+            border-radius: 0px;
+            background-color: #E6E6E6;
+
+            &::placeholder {
+                color: #7b7979;
+            }
+        }
+
+        button {
+            width: 30%;
+            border: none;
+            min-height: 52px;
+            background-color: #FDA403;
+            font-family: "Playfair Display", serif;
+            color: #fff;
+            transition: 0.4s ease;
+            font-size: 16px;
+
+            &:hover {
+                background-color: #CB8402;
+            }
+        }
+    }
+
+    .inpImg {
+        display: flex;
+        align-items: center;
+        min-height: 500px;
+        flex-direction: column;
+
+        img {
+            width: 65%;
+            max-height: 233px;
+        }
+
+        .Address {
+            width: 65%;
+
+            p {
+                font-size: 16px;
+                font-family: Raleway, sans-serif;
+                color: #000;
+                font-weight: 600;
+            }
+
+            .phone {
+                min-height: 40px;
+                display: flex;
+                align-items: end;
+            }
+
+            .emailTxt {
+                min-height: 40px;
+                display: flex;
+                align-items: end;
+            }
+
+            .email {
+                color: #FDA403;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:670px) {
+    #getInTouch {
+        .getInTouchTxt {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+footer {
+    min-height: 200px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .copyrigh {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7b7979;
+p{
+    color: #7b7979;
+    span {
+            color: #7b7979;
+            transition: 0.4s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #FDA403;
+            }    
+}
+    
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    footer {
+        .copyright {
+            p {
+                font-size: 7px;
+            }
+
+
+        }
+    }
+}
