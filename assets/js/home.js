@@ -73,7 +73,7 @@ btn.addEventListener("click", findByName)
 
 
 
-const myForm = document.getElementById("myForm")
+const myForm = document.getElementById("myForm");
 const nameInp = document.getElementById("nameInp")
 const emialInp = document.getElementById("emialInp")
 const sendMessage = document.getElementById("sendMessage")
@@ -82,16 +82,12 @@ const sendMessage = document.getElementById("sendMessage")
 myForm.addEventListener("submit",function(event){
     event.preventDefault()
     axios.post("https://655c83b725b76d9884fd6e9b.mockapi.io/basket",{
-        name: nameinp.value,
-        surname: surnameinp.value,
-        age: ageinp.value,
-        email: emailinp.value,
+        name: nameInp.value,
+        email: emialInp.value,
 
     })
     .then((res)=>{
         console.log(res.data);
+        myForm.reset();
     })
-    setTimeout(function () {
-        window.location.href = "index.html"
-    }, 2000)
 })
